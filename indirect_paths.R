@@ -164,7 +164,7 @@ post_indirect_av[,1] <- c(mean(a1a2_av), mean(c1c2_av))
 post_indirect_av[,2] <- c(sd(a1a2_av), sd(c1c2_av))
 post_indirect_av[,3:4] <- matrix(c(quantile(a1a2_av, probs = c(0.025, 0.975)), 
                                    quantile(c1c2_av, probs = c(0.025, 0.975))), 
-                                 byrow=TRUE, nrow=4)
+                                 byrow=TRUE, nrow=2)
 
 # Savage-Dickey-Density Ratio a1a2
 set.seed(1234)
@@ -210,7 +210,7 @@ post_indirect_ax[,1] <- c(mean(a1a2_ax), mean(c1c2_ax))
 post_indirect_ax[,2] <- c(sd(a1a2_ax), sd(c1c2_ax))
 post_indirect_ax[,3:4] <- matrix(c(quantile(a1a2_ax, probs = c(0.025, 0.975)), 
                                    quantile(c1c2_ax, probs = c(0.025, 0.975))), 
-                                 byrow=TRUE, nrow=4)
+                                 byrow=TRUE, nrow=2)
 
 # Savage-Dickey-Density Ratio a1a2
 set.seed(1234)
